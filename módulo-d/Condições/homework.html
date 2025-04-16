@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body{
+            font: normal 12pt Arial;
+        }
+        input{
+            width: 128px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controle de país</h1>
+    <h3>Olá, qual é o seu país?</h3>
+
+    <select id="pais">
+        <option value=""></option>
+        <option value="Brasil">Brasil</option>
+        <option value="Estados Unidos">Estados Unidos</option>
+    </select>
+
+    <p id="resposta"></p>
+
+    
+
+    <script>
+        const select = document.getElementById('pais');
+        const resposta = document.getElementById('resposta');
+
+        // Escuta o evento de mudança de valor no select
+        select.addEventListener('change', function() {
+            const pais = select.value;
+
+            switch (pais) {
+                case 'Brasil':
+                    resposta.innerText = "Você é Brasileiro";
+                    break;
+                case 'Estados Unidos':
+                    resposta.innerText = "Você é dos Estados Unidos";
+                    break;
+                case '':
+                    resposta.innerText = "Nenhuma opção foi selecionada";
+                    break;
+                default:
+                    resposta.innerText = "Nenhuma opção foi selecionada";
+            }
+        });
+    </script>
+</body>
+</html>

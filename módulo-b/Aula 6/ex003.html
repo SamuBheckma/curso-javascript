@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 JS</title>
+    <style>
+     body {
+      background-color: rgb(103, 160, 182);
+      color: white;
+      font: normal 25pt Arial;}
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> 
+    <p>Boa noite!</p>
+
+      <script>
+         var n1 = Number(window.prompt("Digite um número: ")) //Recebe o tipo string por atribuição do comando {window.prompt(" ")} para somar devemos adicionar o Number.parseInt para números inteiros ou Number.parseFloat para números reais. 
+         var n2 = Number(window.prompt("Digite outro número: ")) //Ou você pode usar {Number(n) para simplificar (é uma maneira mas recente de fazer, está nas versões mais novas do ECMAScript).
+         var s = n1 + n2 //(Number + Number) para adição.
+         window.alert(`A soma dos valores é ${s}` ) 
+//(string + string) para concatenação.
+//Além da concatenação também existe o Template String que é um recurso mas recente; {usar a crase com shift} exemplo, window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+//string(n) ou n.toString(), dá pra fazer isso aqui também: window.alert('A soma dos valores é ' + String(s)); que vai converter isso em uma String.
+         
+      </script>
+
+</body>
+</html>
