@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contador · JavaScript na prática</title>
+  <link rel="stylesheet" href="../../praticas/estilos.css">
+</head>
+<body>
+  <main>
+    <nav aria-label="Navegação"><a href="../../index.html">Todas as práticas</a></nav>
+    <p class="eyebrow">JavaScript na prática / Samuel Bheckma</p>
+    <h1>Contador</h1>
+    <p class="intro">Conte em ordem crescente ou decrescente. O passo deve ser positivo e a sequência pode ter até 1.000 números.</p>
+    <section class="panel"><form><label for="inicio">Início</label><input id="inicio" name="inicio" type="number" required step="1" value="1"><label for="fim">Fim</label><input id="fim" name="fim" type="number" required step="1" value="10"><label for="passo">Passo</label><input id="passo" name="passo" type="number" required min="1" step="1" value="1"><button>Contar</button></form><p role="status" aria-live="polite">Preencha os valores para começar.</p></section>
+    <noscript>Ative o JavaScript para executar esta prática.</noscript>
+    <footer>Exercício de estudo · <a href="../../README.md">Guia do repositório</a></footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

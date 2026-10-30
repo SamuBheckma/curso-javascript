@@ -1,0 +1,15 @@
+{
+  "name": "curso-javascript",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Trilha prática de JavaScript: fundamentos, exercícios e DOM.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node scripts/verificar.mjs",
+    "start": "node scripts/servir.mjs"
+  }
+}

@@ -1,0 +1,23 @@
+/* Um estilo comum mantém as práticas consistentes sem esconder o HTML. */
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #202b39; background: #f3f5f8; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.6; }
+main { width: min(100% - 2rem, 68rem); margin: 3rem auto; }
+a { color: #164fa3; text-underline-offset: .2em; }
+a:hover { color: #102e62; }
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.15; letter-spacing: -.04em; }
+h2 { line-height: 1.25; }
+.eyebrow { color: #48627c; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; }
+.intro { max-width: 46rem; color: #44536a; font-size: 1.1rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; margin: 2rem 0; }
+.card, .panel { background: #fff; padding: 1.5rem; border: 1px solid #cdd6e1; border-radius: .8rem; }
+.panel { max-width: 46rem; margin-top: 1.5rem; }
+label { display: block; margin-top: 1rem; font-weight: 600; }
+input { display: block; width: 100%; max-width: 24rem; font: inherit; padding: .65rem; border: 1px solid #718096; border-radius: .35rem; }
+button { font: inherit; font-weight: 600; background: #164fa3; color: #fff; border: 0; border-radius: .35rem; padding: .7rem 1rem; margin-top: 1rem; cursor: pointer; }
+button[type="button"] { background: #45556b; }
+:focus-visible { outline: 3px solid #a64b00; outline-offset: 3px; }
+[role="status"] { white-space: pre-wrap; overflow-wrap: anywhere; padding: 1rem; background: #eaf0fa; border-radius: .4rem; margin-top: 1rem; }
+small, footer { color: #44536a; }
+footer { margin-top: 2rem; }
+li { margin-block: .3rem; }

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analisador de números · JavaScript na prática</title>
+  <link rel="stylesheet" href="../../praticas/estilos.css">
+</head>
+<body>
+  <main>
+    <nav aria-label="Navegação"><a href="../../index.html">Todas as práticas</a></nav>
+    <p class="eyebrow">JavaScript na prática / Samuel Bheckma</p>
+    <h1>Analisador de números</h1>
+    <p class="intro">Adicione inteiros distintos entre 1 e 100. Depois, calcule quantidade, soma, média, menor e maior valor.</p>
+    <section class="panel"><form><label for="numero">Número (1 a 100)</label><input id="numero" name="numero" type="number" required min="1" max="100" step="1"><button>Adicionar</button></form><ul id="numeros" aria-label="Números adicionados"></ul><button type="button" id="analisar">Analisar lista</button> <button type="button" id="limpar">Limpar</button><p role="status" aria-live="polite">A lista está vazia.</p></section>
+    <noscript>Ative o JavaScript para executar esta prática.</noscript>
+    <footer>Exercício de estudo · <a href="../../README.md">Guia do repositório</a></footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
